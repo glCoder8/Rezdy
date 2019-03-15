@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
   recipeContainer: {
-    backgroundColor: '#bbcfa7',
+    backgroundColor: '#b3cf97',
     borderWidth: 1,
     borderColor: '#bbbbbb',
     borderStyle: 'solid',
@@ -10,10 +10,13 @@ const styles = {
     padding: 10
   },
   recipe: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontSize: 22
   },
   ingredient: {
-
+    backgroundColor: '#aeaea9',
+    marginBottom: 5,
+    padding: 5
   }
 };
 
