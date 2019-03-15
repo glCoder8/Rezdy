@@ -17,15 +17,15 @@ const styles = {
   }
 };
 
-export default ({ data }) => (
+export default ({ recipes }) => (
   <div>
-    { data.map((value, index) => {
+    { recipes.map((recipe, index) => {
       return (
         <div style={styles.recipeContainer} key={index}>
-          <div style={styles.recipe} key={index}>{value.title}</div>
+          <div style={styles.recipe} key={index}>{recipe.title}</div>
           <p>What you will need</p>
           <ul>
-            { value.ingredients.map((ingredient, ing_index) => {
+            { recipe.ingredients.map((ingredient, ing_index) => {
               return <li style={styles.ingredient} key={ing_index}>{ingredient}</li>
             })}
           </ul>
